@@ -12,6 +12,15 @@
 }
 
 
+/* body styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /* header styles */
 .header {
   background-image: url('../Assets/Hero-bg.png');
@@ -50,22 +59,19 @@ nav {
 /* banner styles */
 .banner {
   width: 900px;
-  margin: 0px 265px 150px 265px;
+  margin: 0px 265px 100px 265px;
   text-align: center;
 }
-
 
 .banner-title1 {
   font-size: 65px;
   font-weight: bold;
   color: #252432;
   text-align: center;
-
 }
 
 .banner-title2 {
   text-align: center;
-
 }
 
 .banner-btn {
@@ -79,11 +85,17 @@ nav {
   cursor: pointer;
 }
 
-.banner-btn:hover {}
+.banner-btn:hover {
+
+}
 
 
 /* main section styles */
 main {
+  background-color: #D6DDED;
+}
+
+.container {
   width: 1140px;
   margin: 0 auto;
 }
@@ -92,7 +104,7 @@ main {
 /* action section styles */
 .action-section {
   display: flex;
-  margin-top: 115px;
+  padding-top: 80px;
   margin-bottom: 115px;
   align-items: center;
   justify-content: space-between;
@@ -179,7 +191,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+  padding-bottom: 60px;
 }
 
 .touch-title {
@@ -199,17 +211,18 @@ label {
 .touch-section input[type="email"],
 input[type="text"] {
   width: 495px;
-  height: 45px;
+  height: 35px;
   font-size: 20px;
   font-weight: 400;
   color: #000000;
+  opacity: 0.5;
   display: block;
   padding: 20px 32px;
   border: 2px solid #D6DDED;
   border-radius: 10px;
   background-color: #FFFFFF;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   align-items: center;
 }
 
@@ -217,6 +230,7 @@ textarea {
   font-size: 20px;
   font-weight: 400;
   color: #000000;
+  opacity: 0.5;
   display: block;
   padding: 20px 32px;
   border: 2px solid #D6DDED;
@@ -239,7 +253,52 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 
 /* footer section styles */
+footer {
+  background-color: #FFFFFF;
+  padding-top: 30px;
+}
+
+.footer-logo {
+  font-size: 100px;
+  font-weight: 900;
+  color: #4E47FF;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.footer-description {
+  width: 530px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8987A1;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.footer-link ul {
+  display: flex;
+  text-align: center;
+  margin: 20px 518px 103px 518px;
+  justify-content: space-around;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8987A1;
+}
+
+footer li a:hover {
+  color: red;
+}
